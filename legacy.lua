@@ -20,7 +20,7 @@ get('query').on_submit(function(value)
   local res = fetch({
     url = "https://api.fsh.plus/ytsearch?query=" .. value
   });
-  res = res.body.videos
+  res = res.videos
 
   local html = ''
   for i, v in ipairs(res) do
