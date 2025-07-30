@@ -11,6 +11,41 @@ input#query {
   background-color: #121212;
 }
 
+.results {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.results a {
+  width: 100%;
+  color: #ddd;
+  text-decoration: none;
+}
+.results img {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+}
+.results .time {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  background-color: #0009;
+}
+.results .data {
+  display: flex;
+  flex-direction: column;
+}
+.results .data > *:not(b) {
+  color: #888;
+}
+.results .data div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .channel, #disclaimer {
   display: none !important;
 }
