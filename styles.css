@@ -41,6 +41,11 @@ input#query {
 .results .data > *:not(b) {
   color: #888;
 }
+.results .data b {
+  display: block;
+  max-height: 40px;
+  overflow: hidden;
+}
 .results .data div {
   display: flex;
   justify-content: space-between;
