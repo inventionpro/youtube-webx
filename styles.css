@@ -4,7 +4,14 @@ body {
   background-color: #0f0f0f;
 }
 
-input#query {
+.bar {
+  display: flex;
+  justify-content: center;
+}
+
+input.query {
+  width: 50vw;
+  min-width: 200px;
   color: #fff;
   border: 1px #303030 solid;
   border-radius: 40px;
