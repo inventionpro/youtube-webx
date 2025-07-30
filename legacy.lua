@@ -25,7 +25,7 @@ get('query').on_submit(function(value)
   local html = ''
   for i, v in ipairs(res) do
     html = html .. '<a href="buss://youtube.app/watch?id=' .. v.videoId .. '"><img src="' .. v.thumbnail .. '"><span>' .. v.timestamp .. '</span><div><b>' .. v.title
-      .. '</b><span>' .. v.author.name .. '</span><div><span>' .. shortenNumber(v.views) .. ' views</span>' .. v.ago .. '</div></a>'
+      .. '</b><span>' .. v.author.name .. '</span><div><span>' .. shortenNumber(v.views) .. ' views</span>' .. v.ago .. '</div></div></a>'
   end
 
   get('results').set_contents(html)
