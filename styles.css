@@ -1,0 +1,12 @@
+/* bussinga! */
+body {
+  color: #fff;
+  background-color: #0f0f0f;
+}
+
+input#query {
+  color: #fff;
+  border: 1px #303030 solid;
+  border-radius: 40px;
+  background-color: #121212;
+}
