@@ -1,5 +1,6 @@
-if not browser.api.media_context then
-  get_id('disclaimer').content = 'Your browser does not support media context, this api is needed'
-else
-  get_id('disclaimer').remove()
-end
+local id = window.query.id
+
+local res = fetch({
+  url = "https://api.fsh.plus/video?id=" .. id
+});
+get('video').set_source(res.video)
