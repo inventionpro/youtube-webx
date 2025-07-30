@@ -11,6 +11,6 @@ input#query {
   background-color: #121212;
 }
 
-.channel {
+.channel, #disclaimer {
   display: none !important;
 }
