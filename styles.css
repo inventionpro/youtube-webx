@@ -10,3 +10,7 @@ input#query {
   border-radius: 40px;
   background-color: #121212;
 }
+
+.channel {
+  display: none !important;
+}
