@@ -18,14 +18,17 @@ input.query {
   background-color: #121212;
 }
 button.search {
-  width: 42px;
+  width: 52px;
+  height: 42px;
   color: #fff;
   border: 1px #303030 solid;
+  padding: 8px;
   border-radius: 0 40px 40px 0;
   background-color: #ffffff14;
 }
 button.search img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .results {
