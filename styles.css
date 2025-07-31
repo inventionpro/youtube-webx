@@ -14,8 +14,18 @@ input.query {
   min-width: 200px;
   color: #fff;
   border: 1px #303030 solid;
-  border-radius: 40px;
+  border-radius: 40px 0 0 40px;
   background-color: #121212;
+}
+button.search {
+  width: 42px;
+  color: #fff;
+  border: 1px #303030 solid;
+  border-radius: 0 40px 40px 0;
+  background-color: #ffffff14;
+}
+button.search img {
+  width: 100%;
 }
 
 .results {

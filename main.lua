@@ -15,8 +15,8 @@ function shortenNumber(n)
   return tostring(n)
 end
 
-get('query').on_submit(function(value)
-  value = string.gsub(value, "%+", "%%2B")
+function search()
+  value = string.gsub(get('query').get_contents(), "%+", "%%2B")
   local res = fetch({
     url = "https://api.fsh.plus/ytsearch?query=" .. value
   });
@@ -29,4 +29,11 @@ get('query').on_submit(function(value)
   end
 
   get('results').set_contents(html)
+end
+
+get('query').on_submit(function()
+  search()
+end)
+get('search').on_click(function()
+  search()
 end)
