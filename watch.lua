@@ -3,10 +3,13 @@ local id = location.query.id
 local res = fetch({
   url = "https://api.fsh.plus/video?id=" .. id
 }):await();
-get_id('video').on_load(function()
+
+local video = get_id('video')
+
+video.on_load(function()
   if browser.api.media_context then
-    get_id('video').media_context.play()
+    video.media_context.play()
   end
 end)
 
-get_id('video').content = res.video
+video.content = res.body.video
